@@ -35,75 +35,78 @@ document.addEventListener('click', (event) => {
 
 const enquiryForm = document.querySelector('#enquiry-form');
 const formStatus = document.querySelector('#form-status');
-const submitButton = enquiryForm.querySelector('[type="submit"]');
 
-function showFormStatus(message, state, enquiryText = '') {
-  formStatus.replaceChildren();
-  formStatus.className = `form-status${state ? ` is-${state}` : ''}`;
-  formStatus.append(document.createTextNode(message));
+if (enquiryForm) {
+  const submitButton = enquiryForm.querySelector('[type="submit"]');
 
-  if (enquiryText) {
-    const fallbackLink = document.createElement('a');
-    fallbackLink.href = `https://wa.me/918287023474?text=${encodeURIComponent(enquiryText)}`;
-    fallbackLink.target = '_blank';
-    fallbackLink.rel = 'noopener noreferrer';
-    fallbackLink.textContent = ' Send it on WhatsApp.';
-    formStatus.append(fallbackLink);
-  }
-}
+  function showFormStatus(message, state, enquiryText = '') {
+    formStatus.replaceChildren();
+    formStatus.className = `form-status${state ? ` is-${state}` : ''}`;
+    formStatus.append(document.createTextNode(message));
 
-enquiryForm.addEventListener('submit', async (event) => {
-  event.preventDefault();
-
-  if (!enquiryForm.reportValidity()) return;
-
-  const formData = new FormData(enquiryForm);
-  const endpoint = enquiryForm.getAttribute('action').trim();
-  const enquiryText = [
-    'Hello Day Night Security, I would like to request a quote.',
-    '',
-    `Name: ${formData.get('name')}`,
-    `Phone Number: ${formData.get('phone')}`,
-    `Email: ${formData.get('email')}`,
-    `Service Required: ${formData.get('service')}`,
-    `Message: ${formData.get('message')}`
-  ].join('\n');
-
-  if (endpoint.includes('YOUR_FORMSPREE_FORM_ID')) {
-    showFormStatus('Email delivery is not configured yet. Replace the Formspree form ID in this form action after activating your form.', 'error', enquiryText);
-    return;
+    if (enquiryText) {
+      const fallbackLink = document.createElement('a');
+      fallbackLink.href = `https://wa.me/918287023474?text=${encodeURIComponent(enquiryText)}`;
+      fallbackLink.target = '_blank';
+      fallbackLink.rel = 'noopener noreferrer';
+      fallbackLink.textContent = ' Send it on WhatsApp.';
+      formStatus.append(fallbackLink);
+    }
   }
 
-  if (!/^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(endpoint)) {
-    showFormStatus('The form endpoint is not a valid Formspree URL. Please contact us directly or try WhatsApp.', 'error', enquiryText);
-    return;
-  }
+  enquiryForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-  submitButton.disabled = true;
-  enquiryForm.setAttribute('aria-busy', 'true');
-  showFormStatus('Sending your enquiry…', 'loading');
+    if (!enquiryForm.reportValidity()) return;
 
-  try {
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      body: formData,
-      headers: { Accept: 'application/json' }
-    });
+    const formData = new FormData(enquiryForm);
+    const endpoint = enquiryForm.getAttribute('action').trim();
+    const enquiryText = [
+      'Hello Day Night Security, I would like to request a quote.',
+      '',
+      `Name: ${formData.get('name')}`,
+      `Phone Number: ${formData.get('phone')}`,
+      `Email: ${formData.get('email')}`,
+      `Service Required: ${formData.get('service')}`,
+      `Message: ${formData.get('message')}`
+    ].join('\n');
 
-    if (!response.ok) {
-      throw new Error(`Formspree returned HTTP ${response.status}`);
+    if (endpoint.includes('YOUR_FORMSPREE_FORM_ID')) {
+      showFormStatus('Email delivery is not configured yet. Replace the Formspree form ID in this form action after activating your form.', 'error', enquiryText);
+      return;
     }
 
-    showFormStatus('Your enquiry was submitted successfully. Day Night Security will receive it through the configured form.', 'success');
-    enquiryForm.reset();
-  } catch (error) {
-    console.error('Enquiry submission failed:', error);
-    showFormStatus('We could not submit your enquiry. Please try again or contact us on WhatsApp.', 'error', enquiryText);
-  } finally {
-    submitButton.disabled = false;
-    enquiryForm.removeAttribute('aria-busy');
-  }
-});
+    if (!/^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(endpoint)) {
+      showFormStatus('The form endpoint is not a valid Formspree URL. Please contact us directly or try WhatsApp.', 'error', enquiryText);
+      return;
+    }
+
+    submitButton.disabled = true;
+    enquiryForm.setAttribute('aria-busy', 'true');
+    showFormStatus('Sending your enquiry…', 'loading');
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: { Accept: 'application/json' }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Formspree returned HTTP ${response.status}`);
+      }
+
+      showFormStatus('Your enquiry was submitted successfully. Day Night Security will receive it through the configured form.', 'success');
+      enquiryForm.reset();
+    } catch (error) {
+      console.error('Enquiry submission failed:', error);
+      showFormStatus('We could not submit your enquiry. Please try again or contact us on WhatsApp.', 'error', enquiryText);
+    } finally {
+      submitButton.disabled = false;
+      enquiryForm.removeAttribute('aria-busy');
+    }
+  });
+}
 
 const contactSections = [document.querySelector('#contact'), document.querySelector('.site-footer')].filter(Boolean);
 if ('IntersectionObserver' in window && contactSections.length) {

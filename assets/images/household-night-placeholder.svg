@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">Household night security visual placeholder</title>
+  <desc id="desc">Residential property at night with warm entry lighting and a security guard on duty.</desc>
+  <defs>
+    <linearGradient id="night" x2="0" y2="1"><stop stop-color="#172b42"/><stop offset="1" stop-color="#080f17"/></linearGradient>
+    <linearGradient id="warm" x2="0" y2="1"><stop stop-color="#efd28d"/><stop offset="1" stop-color="#bd8543" stop-opacity=".2"/></linearGradient>
+  </defs>
+  <rect width="1400" height="720" fill="url(#night)"/>
+  <circle cx="1180" cy="103" r="48" fill="#d4ae68" opacity=".85"/>
+  <path d="M0 521 200 465l181 52 202-154 206 158 193-81 218 82v198H0z" fill="#12212d"/>
+  <path d="M262 491V251l259-127 245 127v253z" fill="#667b83"/>
+  <path d="m224 264 297-162 282 162-16 27-266-142-279 142z" fill="#101923"/>
+  <path d="M311 286h151v143H311zM487 281h178v207H487z" fill="#213749"/>
+  <path d="M327 305h120v110H327zM506 301h140v165H506z" fill="url(#warm)"/>
+  <path d="M708 383h153v108H708z" fill="#172836"/>
+  <path d="M714 396h141v90" fill="none" stroke="#d4ae68" stroke-width="4"/>
+  <path d="M859 495h374v106H859zM890 510v158m57-158v158m57-158v158m57-158v158m57-158v158m57-158v158" stroke="#a9824c" stroke-width="7"/>
+  <path d="M860 517h372m-372 54h372" stroke="#d4ae68" stroke-width="6"/>
+  <path d="M0 641h1400v79H0z" fill="#0a1118"/>
+  <path d="M522 720c3-82 16-128 40-128s37 46 40 128" fill="#070c12"/>
+  <circle cx="562" cy="582" r="13" fill="#c5a98d"/>
+  <path d="M546 578q16-26 32 0v10h-32z" fill="#101820"/>
+  <path d="M540 603q22-16 44 0l10 63h-65z" fill="#273c4d"/>
+  <path d="m551 664-18 56m40-56 17 56" stroke="#d4ae68" stroke-width="5"/>
+  <path d="M62 687h1270" stroke="#d4ae68" stroke-opacity=".2" stroke-width="2"/>
+  <text x="53" y="683" fill="#d7c08f" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">REPLACEABLE NIGHT SECURITY VISUAL</text>
+</svg>

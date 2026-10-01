@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Household entry monitoring visual placeholder</title>
+  <desc id="desc">Modern residential gate with an on-duty security guard monitoring the entrance.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#d6d9d4"/><stop offset="1" stop-color="#8c9ca0"/></linearGradient>
+    <linearGradient id="shadow" x2="0" y2="1"><stop stop-color="#253e4d"/><stop offset="1" stop-color="#101923"/></linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="#d9d9d2"/>
+  <path d="M0 0h1000v483H0z" fill="url(#wall)"/>
+  <path d="M0 500 1000 429v271H0z" fill="#33434a"/>
+  <path d="M115 114h695v390H115z" fill="#1a2831"/>
+  <path d="M143 145h631v331H143z" fill="#b6c2c1"/>
+  <path d="M164 166h273v289H164zM455 166h295v289H455z" fill="url(#shadow)"/>
+  <path d="M174 178h14v278h-14m39-278h12v278h-12m39-278h12v278h-12m39-278h12v278h-12m39-278h12v278h-12m39-278h12v278h-12M473 178h14v278h-14m39-278h12v278h-12m39-278h12v278h-12m39-278h12v278h-12m39-278h12v278h-12m39-278h12v278h-12" fill="#9eb0b0"/>
+  <path d="M115 485h695v17H115z" fill="#d4ae68"/>
+  <path d="M808 103h27v410h-27zM95 100h26v415H95z" fill="#8f6937"/>
+  <path d="M71 514h800" stroke="#d4ae68" stroke-width="9"/>
+  <path d="M80 527h790v13H80z" fill="#182734"/>
+  <path d="M0 607 1000 530v170H0z" fill="#17242e"/>
+  <path d="M443 700c3-91 17-139 42-139 26 0 41 48 44 139" fill="#101820"/>
+  <path d="m470 600-20 100m57-100 19 100" stroke="#d4ae68" stroke-width="6"/>
+  <circle cx="485" cy="566" r="14" fill="#c5a98d"/>
+  <path d="M468 562q17-29 34 0v10h-34z" fill="#111921"/>
+  <path d="M463 587q23-17 45 0l12 64h-69z" fill="#314a5b"/>
+  <path d="M478 591v35m17-35v35" stroke="#d4ae68" stroke-width="3"/>
+  <text x="36" y="666" fill="#d7c08f" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">REPLACEABLE HOME-ENTRY VISUAL</text>
+</svg>

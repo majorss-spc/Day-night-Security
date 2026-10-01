@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+  <title id="title">Institutional security visual placeholder</title>
+  <desc id="desc">Institutional campus entrance with a security post, gate and personnel on site.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#c2d0d0"/><stop offset="1" stop-color="#7e969b"/></linearGradient>
+    <linearGradient id="campus" x2="0" y2="1"><stop stop-color="#d8d8cf"/><stop offset="1" stop-color="#829298"/></linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="url(#sky)"/>
+  <path d="M0 460h1000v240H0z" fill="#33433f"/>
+  <path d="M144 463V192h695v271z" fill="url(#campus)"/>
+  <path d="m109 211 382-124 386 124v29H109z" fill="#1a2932"/>
+  <path d="M206 250h127v180H206zM361 250h103v180H361zM493 250h103v180H493zM625 250h157v180H625z" fill="#456171"/>
+  <path d="M221 267h97v147h-97zM376 267h73v147h-73zM508 267h74v147h-74zM641 267h124v147H641z" fill="#94abb1"/>
+  <path d="M459 343h64v120h-64z" fill="#293a42"/>
+  <path d="M470 357h42v105h-42z" fill="#d4ae68" opacity=".62"/>
+  <path d="M0 474h1000v10H0z" fill="#d4ae68"/>
+  <path d="M39 493h922v124H39z" fill="#15242e"/>
+  <path d="M58 502v139m70-139v139m70-139v139m70-139v139m70-139v139m70-139v139m70-139v139m70-139v139m70-139v139m70-139v139m70-139v139m70-139v139" stroke="#d4ae68" stroke-opacity=".68" stroke-width="5"/>
+  <path d="M39 511h922m-922 58h922" stroke="#bd9557" stroke-width="5"/>
+  <path d="M784 475h114v112H784z" fill="#324b57"/>
+  <path d="M795 488h92v87h-92z" fill="#bad0d0"/>
+  <path d="M814 700c2-68 15-105 34-105s31 37 34 105" fill="#0d1419"/>
+  <circle cx="848" cy="585" r="11" fill="#bd9e83"/>
+  <path d="M835 581q13-21 26 0v8h-26z" fill="#161d22"/>
+  <path d="M831 602q17-14 35 0l9 55h-53z" fill="#273e4c"/>
+  <path d="m841 655-13 45m29-45 12 45" stroke="#d4ae68" stroke-width="4"/>
+  <text x="34" y="675" fill="#ddc994" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">REPLACEABLE CAMPUS SECURITY VISUAL</text>
+</svg>

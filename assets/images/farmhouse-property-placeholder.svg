@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 780" role="img" aria-labelledby="title desc">
+  <title id="title">Farm house security visual placeholder</title>
+  <desc id="desc">A large contemporary farm house with grounds, a controlled entrance and security personnel.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#536d7a"/><stop offset="1" stop-color="#bdad8b"/></linearGradient>
+    <linearGradient id="building" x2="0" y2="1"><stop stop-color="#e4dfd1"/><stop offset="1" stop-color="#8c9995"/></linearGradient>
+    <linearGradient id="glass" x2="0" y2="1"><stop stop-color="#9bb7bf"/><stop offset="1" stop-color="#233c4c"/></linearGradient>
+  </defs>
+  <rect width="1400" height="780" fill="url(#sky)"/>
+  <circle cx="1135" cy="133" r="62" fill="#e3c987" opacity=".75"/>
+  <path d="M0 452q150-94 293 8t282-12q167-87 332 15t493-19v336H0z" fill="#495c50"/>
+  <path d="M0 564q217-93 416 4t377-4q251-104 607 9v207H0z" fill="#293c36"/>
+  <path d="M327 457V253l241-142 267 142v224z" fill="url(#building)"/>
+  <path d="m289 264 280-175 309 175-14 31-295-162-265 162z" fill="#23323a"/>
+  <path d="M383 282h118v136H383zM522 265h258v193H522z" fill="url(#glass)"/>
+  <path d="M399 299h86v101h-86zM542 284h94v154h-94zM652 284h108v154H652z" fill="#263f50"/>
+  <path d="M494 451h301v28H494z" fill="#9f865d"/>
+  <path d="M805 374h187v105H805z" fill="#d2d0c3"/>
+  <path d="M820 390h158v78H820z" fill="#4c6874"/>
+  <path d="M82 529h1235v128H82z" fill="#20302d" opacity=".85"/>
+  <path d="M122 544v162m76-162v162m76-162v162m76-162v162m76-162v162m76-162v162m76-162v162m76-162v162m76-162v162m76-162v162m76-162v162m76-162v162" stroke="#d4ae68" stroke-opacity=".72" stroke-width="6"/>
+  <path d="M83 552h1235m-1235 51h1235" stroke="#d4ae68" stroke-width="6"/>
+  <path d="M83 697h1237" stroke="#101923" stroke-width="15"/>
+  <path d="M1056 449v199" stroke="#d4ae68" stroke-width="8"/>
+  <path d="M1016 461h82v11h-82z" fill="#101923"/>
+  <path d="M1065 780c3-91 18-141 44-141s41 50 45 141" fill="#101820"/>
+  <circle cx="1109" cy="623" r="14" fill="#bc9a7e"/>
+  <path d="M1092 619q17-29 34 0v10h-34z" fill="#171d22"/>
+  <path d="M1087 645q22-18 45 0l13 72h-71z" fill="#253a49"/>
+  <path d="m1100 709-17 71m43-71 16 71" stroke="#d4ae68" stroke-width="5"/>
+  <path d="M0 724h1400v56H0z" fill="#111a20"/>
+  <text x="54" y="756" fill="#e1c98f" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">REPLACEABLE FARM HOUSE SECURITY VISUAL</text>
+</svg>

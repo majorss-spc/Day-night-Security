@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">Property perimeter security visual placeholder</title>
+  <desc id="desc">Professional security presence at a large property boundary during evening.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#1c3650"/><stop offset="1" stop-color="#778078"/></linearGradient>
+    <linearGradient id="lamp" x2="0" y2="1"><stop stop-color="#e7ce91" stop-opacity=".9"/><stop offset="1" stop-color="#d4ae68" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1400" height="720" fill="url(#sky)"/>
+  <path d="M0 390q178-75 330 15t350-18q211-76 366 16t354-5v322H0z" fill="#263a34"/>
+  <path d="M0 535q266-92 541 5t859-6v186H0z" fill="#14241f"/>
+  <path d="M127 408h1147v214H127z" fill="#12212b"/>
+  <path d="M156 412v244m93-244v244m93-244v244m93-244v244m93-244v244m93-244v244m93-244v244m93-244v244m93-244v244m93-244v244m93-244v244m93-244v244" stroke="#b8955a" stroke-opacity=".7" stroke-width="6"/>
+  <path d="M127 430h1147m-1147 89h1147m-1147 89h1147" stroke="#d4ae68" stroke-width="5"/>
+  <path d="M127 399h1147" stroke="#192831" stroke-width="14"/>
+  <path d="M1080 171v253" stroke="#101923" stroke-width="13"/>
+  <path d="M1080 171h114" stroke="#101923" stroke-width="13"/>
+  <path d="M1175 174v31" stroke="#d4ae68" stroke-width="7"/>
+  <path d="M1120 198q55 70 110 0v179q-55 74-110 0z" fill="url(#lamp)" opacity=".55"/>
+  <path d="M1100 660c4-97 23-150 52-150s48 53 52 150" fill="#091117"/>
+  <path d="m1135 572-21 88m75-88 21 88" stroke="#d4ae68" stroke-width="6"/>
+  <circle cx="1152" cy="493" r="15" fill="#c6a78d"/>
+  <path d="M1134 488q18-30 36 0v11h-36z" fill="#101820"/>
+  <path d="M1129 517q24-18 48 0l15 78h-77z" fill="#2a4050"/>
+  <path d="M0 672h1400v48H0z" fill="#0a1116"/>
+  <text x="52" y="704" fill="#ddc994" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">REPLACEABLE PERIMETER SECURITY VISUAL</text>
+</svg>
